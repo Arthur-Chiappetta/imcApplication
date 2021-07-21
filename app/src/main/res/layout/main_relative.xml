@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/imc"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="@string/hint_peso"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/peso"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:layout_marginTop="30dp"
+        android:hint="@string/hint_altura"
+        android:textSize="13sp"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/altura"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/light_orange"
+        android:text="@string/calcular"
+        android:textColor="@color/black" />
+
+   <!-- <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/calcular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+-->
+</RelativeLayout>
